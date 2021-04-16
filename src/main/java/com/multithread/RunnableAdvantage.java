@@ -10,10 +10,10 @@ package com.multithread;
  */
 public class RunnableAdvantage implements Runnable{
 
-    int i = 0;
+
 
     public void run() {
-
+        int i = 0;
         while (i<10) {
             System.out.println("线程" + Thread.currentThread().getName() + "数了第" + (i++) + "个数字。");
         }
