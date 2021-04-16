@@ -14,8 +14,7 @@ public class RunnableAdvantage implements Runnable{
     public void run() {
 
         while (i<10) {
-            System.out.println("当前线程的名字是：  " + Thread.currentThread().getName() +  "i的值是  " + i );
-            i++;
+            System.out.println("线程" + Thread.currentThread().getName() + "数了第" + (i++) + "个数字。");
         }
 
     }
